@@ -1,0 +1,64 @@
+body {
+    font-family: 'Sofia Sans', sans-serif;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+h1 {
+    color: #333;
+    font-weight: 700;
+}
+
+.active {
+    background-color: #39c5bb60;
+}
+
+.container-xl {
+    padding: 80px 20px 0px 20px;
+}
+
+@media (max-width: 768px) {
+    /*針對tr去做隱藏*/
+    tr.tr-only-hide {
+        display: none !important;
+    }
+    /*讓tr變成區塊主要讓他有個區塊*/
+    .table-rwd tr {
+        display: block;
+    }
+    .table-rwd td {
+        text-align: left;
+        font-size: 24px;
+        overflow: hidden;
+        width: 100%;
+        display: block;
+    }
+    .table-rwd td::before {
+        content: attr(data-th) ' : ';
+        display: inline-block;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-right: 10px;
+    }
+
+    .table-row td:nth-last-child(2),
+    .table-row td:last-child {
+        text-align: center;
+        display: flex;
+    }
+    .table-row td:nth-last-child(2) .modifybutton,
+    .table-row td:last-child .deletebutton {
+        width: 100%;
+    }
+
+    .table-row td:nth-last-child(2)::before,
+    .table-row td:last-child::before {
+        content: '';
+    }
+
+    /*當RWD縮小的時候.table-bordered 會有兩條線，所以針對.table-bordered去做修正*/
+    /* .table-rwd.table-bordered td,
+    .table-rwd.table-bordered th,
+    .table-rwd.table-bordered {
+        border: 0;
+    } */
+}
