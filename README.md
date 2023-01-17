@@ -2,6 +2,39 @@
 
 Demo: https://justine92415.github.io/interVIewExam/
 
+---
+
+功能預覽
+
+-   滑鼠移動至欄位時以該欄位為中心十字線上的欄列變色
+-   滑鼠移到人名時會出現說明文字
+-   滑鼠點擊手機時會出現手機資訊
+    <img src="img/demo1.gif" alt=""/>
+
+## 新增會員 (只能新增表上不存在的中/英文姓名)
+
+-   表單以及格式驗證
+    <img src="img/demo2.gif" alt=""/>
+
+## 搜尋會員 (表單為空白時預設為搜尋所有會員，可自行選擇搜尋條件)
+
+-   表單以及格式驗證
+    <img src="img/demo3.gif" alt=""/>
+
+## 編輯會員
+
+-   表單以及格式驗證
+-   重新填寫
+    <img src="img/demo4.gif" alt=""/>
+
+## 刪除會員
+
+-   表單以及格式驗證
+-   刪除提醒
+    <img src="img/demo5.gif" alt=""/>
+
+---
+
 ## 前端技術
 
 jQuery
