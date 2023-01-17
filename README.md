@@ -5,7 +5,9 @@ Demo: https://justine92415.github.io/interVIewExam/
 ## 前端技術
 
 jQuery
+
 Bootstrap
+
 AJAX
 
 -   以 fetch 的方式發送請求給後端，實現會員資料的增刪改查動作。
