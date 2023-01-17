@@ -35,14 +35,8 @@ $(document).ready(function () {
         if (allFilled) ajaxobj.add(reqBody);
     });
 
-    $('#addform').submit(function (e) {
-        e.preventDefault();
-    });
-    $('#searchform').submit(function (e) {
-        e.preventDefault();
-    });
-    $('#modifyform').submit(function (e) {
-        e.preventDefault();
+    $('.addconfirm-footer .btn-reset').click(function (e) {
+        $('#addform')[0].reset();
     });
 
     // 搜尋按鈕
@@ -91,7 +85,6 @@ $(document).ready(function () {
 
     // 自適應視窗
     $(window).resize(function () {
-        console.log(window.innerWidth);
         if (window.innerWidth <= 768) {
             $('.table-row').each((_, tableRow) => {
                 $(tableRow).off('mouseover');
@@ -104,6 +97,17 @@ $(document).ready(function () {
         let dWidth = wWidth * 0.4;
         let wHeight = $(window).height();
         let dHeight = wHeight * 0.4;
+    });
+
+    // 防止表單默認提交
+    $('#addform').submit(function (e) {
+        e.preventDefault();
+    });
+    $('#searchform').submit(function (e) {
+        e.preventDefault();
+    });
+    $('#modifyform').submit(function (e) {
+        e.preventDefault();
     });
 });
 function refreshTable(data) {
@@ -343,7 +347,6 @@ AjaxObject.prototype.search = function (queryOBJ) {
     const url = new URL(BASE_URL);
     const queryParam = new URLSearchParams(queryOBJ);
     url.search = queryParam;
-    console.log(url);
     fetch(url)
         .then((res) => res.json())
         .then((json) => refreshTable(json.data.members));

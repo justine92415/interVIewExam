@@ -57,7 +57,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalLabel">新增表單</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -65,39 +65,39 @@
         <form method="#" id="addform">
           <div class="modal-body">
             <!-- 中文姓名 -->
-            <div class="formcnname">
+            <div class="formcnname mb-3">
               <div>
-                <label>中文姓名</label> <input name="cnname" style="width: 100px" type="text" id="addcnname"
+                <label>中文姓名：</label> <input name="cnname" style="width: 100px" type="text" id="addcnname"
                   class="form-control" required>
               </div>
             </div>
             <!-- 英文姓名 -->
-            <div class="formenname">
+            <div class="formenname mb-3">
               <div>
-                <label>英文姓名</label> <input name="enname" style="width: 100px" type="text" id="addenname"
+                <label>英文姓名：</label> <input name="enname" style="width: 100px" type="text" id="addenname"
                   class="form-control" required>
               </div>
             </div>
             <!-- 性別 -->
-            <div class="formsex">
-              <label>性別</label>
+            <div class="formsex mb-3">
+              <label>性別：</label>
               <div>
                 <label><input type="radio" name="addsex" value=0 class="radio" checked="checked">男</label>
                 <label><input type="radio" name="addsex" value=1 class="radio">女</label>
               </div>
             </div>
             <!-- 手機號碼 -->
-            <div class="formphone">
+            <div class="formphone mb-3">
               <div>
-                <label>手機號碼</label> <input name="phone" style="width: 100px" type="tel" pattern="09\d{8}" id="addphone"
-                  class="form-control" required>
+                <label>手機號碼：</label> <input name="phone" style="width: 120px" type="tel" pattern="09\d{8}" id="addphone"
+                  class="form-control" placeholder="09xxxxxxxx" required>
               </div>
             </div>
             <!-- 信箱 -->
-            <div class="formmail">
+            <div class="formmail mb-3">
               <div>
-                <label>信箱</label> <input name="mail" style="width: 100px" type="email" id="addmail" class="form-control"
-                  required>
+                <label>信箱：</label> <input name="mail" style="width: 300px" type="email" id="addmail"
+                  class="form-control" placeholder="example@gmail.com" required>
               </div>
             </div>
           </div>
@@ -117,7 +117,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalLabel">搜尋表單</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -125,38 +125,39 @@
         <form method="#" id="searchform">
           <div class="modal-body">
             <!-- 中文姓名 -->
-            <div class="formcnname">
+            <div class="formcnname mb-3">
               <div>
-                <label>中文姓名</label> <input name="cName" style="width: 100px" type="text" id="secnname"
+                <label>中文姓名：</label> <input name="cName" style="width: 100px" type="text" id="secnname"
                   class="form-control">
               </div>
             </div>
             <!-- 英文姓名 -->
-            <div class="formenname">
+            <div class="formenname mb-3">
               <div>
-                <label>英文姓名</label> <input name="eName" style="width: 100px" type="text" id="seenname"
+                <label>英文姓名：</label> <input name="eName" style="width: 100px" type="text" id="seenname"
                   class="form-control">
               </div>
             </div>
             <!-- 性別 -->
-            <div class="formsex">
-              <label>性別</label>
+            <div class="formsex mb-3">
+              <label>性別：</label>
               <div>
                 <label><input type="radio" name="sex" value="0" class="seradio">男</label> <label><input type="radio"
                     name="sex" value="1" class="seradio">女</label>
               </div>
             </div>
             <!-- 手機號碼 -->
-            <div class="formphone">
+            <div class="formphone mb-3">
               <div>
-                <label>手機號碼</label> <input name="phone" style="width: 100px" type="tel" pattern="09\d{8}" id="sephone"
-                  class="form-control">
+                <label>手機號碼：</label> <input name="phone" style="width: 120px" type="tel" pattern="09\d{8}" id="sephone"
+                  class="form-control" placeholder="09xxxxxxxx">
               </div>
             </div>
             <!-- 信箱 -->
-            <div class="formmail">
+            <div class="formmail mb-3">
               <div>
-                <label>信箱</label> <input name="mail" style="width: 100px" type="email" id="semail" class="form-control">
+                <label>信箱：</label> <input name="mail" style="width: 300px" type="email" id="semail" class="form-control"
+                  placeholder="example@gmail.com">
               </div>
             </div>
           </div>
@@ -176,7 +177,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalLabel">修改表單</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -184,39 +185,39 @@
         <form method="post" id="modifyform">
           <div class="modal-body">
             <!-- 中文姓名 -->
-            <div class="formcnname">
+            <div class="formcnname mb-3">
               <div>
-                <label>中文姓名</label> <input name="cnname" style="width: 100px" type="text" id="mocnname"
+                <label>中文姓名：</label> <input name="cnname" style="width: 100px" type="text" id="mocnname"
                   class="form-control" required>
               </div>
             </div>
             <!-- 英文姓名 -->
-            <div class="formenname">
+            <div class="formenname mb-3">
               <div>
-                <label>英文姓名</label> <input name="enname" style="width: 100px" type="text" id="moenname"
+                <label>英文姓名：</label> <input name="enname" style="width: 100px" type="text" id="moenname"
                   class="form-control" required>
               </div>
             </div>
             <!-- 性別 -->
-            <div class="formsex">
-              <label>性別</label>
+            <div class="formsex mb-3">
+              <label>性別：</label>
               <div>
                 <label><input type="radio" name="mosex" value=0 class="radio" id="modifyman" required>男</label>
                 <label><input type="radio" name="mosex" value=1 class="radio" id="modifywoman" required>女</label>
               </div>
             </div>
             <!-- 手機號碼 -->
-            <div class="formphone">
+            <div class="formphone mb-3">
               <div>
-                <label>手機號碼</label> <input name="phone" style="width: 100px" type="tel" pattern="09\d{8}" id="mophone"
-                  class="form-control" required>
+                <label>手機號碼：</label> <input name="phone" style="width: 120px" type="tel" pattern="09\d{8}" id="mophone"
+                  class="form-control" placeholder="09xxxxxxxx" required>
               </div>
             </div>
             <!-- 信箱 -->
-            <div class="formmail">
+            <div class="formmail mb-3">
               <div>
-                <label>信箱</label> <input name="mail" style="width: 100px" type="email" id="momail" class="form-control"
-                  required>
+                <label>信箱：</label> <input name="mail" style="width: 300px" type="email" id="momail" class="form-control"
+                  placeholder="example@gmail.com" required>
               </div>
             </div>
             <!-- 確認送出 -->

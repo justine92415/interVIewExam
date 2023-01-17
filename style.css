@@ -17,11 +17,9 @@ h1 {
 }
 
 @media (max-width: 768px) {
-    /*針對tr去做隱藏*/
     tr.tr-only-hide {
         display: none !important;
     }
-    /*讓tr變成區塊主要讓他有個區塊*/
     .table-rwd tr {
         display: block;
     }
@@ -54,11 +52,4 @@ h1 {
     .table-row td:last-child::before {
         content: '';
     }
-
-    /*當RWD縮小的時候.table-bordered 會有兩條線，所以針對.table-bordered去做修正*/
-    /* .table-rwd.table-bordered td,
-    .table-rwd.table-bordered th,
-    .table-rwd.table-bordered {
-        border: 0;
-    } */
 }
